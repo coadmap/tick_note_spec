@@ -1,0 +1,26 @@
+input CreateNoteInput {
+    title: String!
+    content: String
+}
+
+type CreateNotePayload {
+    note: Note
+}
+
+input UpdateNoteInput {
+    noteId: ID!
+    title: String
+    content: String
+}
+
+type UpdateNotePayload {
+    note: Note
+}
+
+input DeleteNoteInput {
+    noteId: ID!
+}
+
+type DeleteNotePayload {
+    note: Note
+}

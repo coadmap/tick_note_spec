@@ -1,0 +1,8 @@
+type Note {
+    id: ID!
+    title: String!
+    content: String
+    author: Account!
+    created_at: DateTime!
+    updated_at: DateTime!
+}

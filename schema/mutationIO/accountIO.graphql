@@ -1,0 +1,17 @@
+input UpdateAccountInput {
+    accountId: ID!
+    email: String
+    username: String
+}
+
+type UpdateAccountPayload {
+    account: Account
+}
+
+input DeleteAccountInput {
+    accountId: ID!
+}
+
+type DeleteAccountPayload {
+    account: Account
+}

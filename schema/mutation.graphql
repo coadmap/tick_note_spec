@@ -1,0 +1,13 @@
+type Mutation {
+    # Account
+    updateAccount(input: UpdateAccountInput!): UpdateAccountPayload
+    deleteAccount(input: DeleteAccountInput!): DeleteAccountPayload
+
+    # Note
+    createNote(input: CreateNoteInput!): CreateNotePayload
+    updateNote(input: UpdateNoteInput!): UpdateNotePayload
+    deleteNote(input: DeleteNoteInput!): DeleteNotePayload
+
+    # Tag
+    createTag(input: CreateTagInput!): CreateTagPayload
+}

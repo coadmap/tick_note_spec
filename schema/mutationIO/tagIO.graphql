@@ -1,0 +1,7 @@
+input CreateTagInput {
+    name: String!
+}
+
+type CreateTagPayload {
+    tag: Tag
+}

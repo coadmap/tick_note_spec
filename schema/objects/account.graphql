@@ -1,0 +1,8 @@
+type Account {
+    id: ID!
+    email: Email!
+    password: String!
+    username: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
