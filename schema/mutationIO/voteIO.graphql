@@ -1,0 +1,9 @@
+input CreateVoteInput {
+    accountId: ID!
+    noteId: ID!
+    voteType: VoteType!
+}
+
+type CreateVotePayload {
+    vote: Vote
+}

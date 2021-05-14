@@ -3,6 +3,7 @@ type Note {
     title: String!
     content: String
     author: Account!
-    created_at: DateTime!
-    updated_at: DateTime!
+    tags: [Tag]
+    createdAt: DateTime!
+    updatedAt: DateTime!
 }

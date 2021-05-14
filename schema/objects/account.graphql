@@ -3,6 +3,6 @@ type Account {
     email: Email!
     password: String!
     username: String!
-    created_at: DateTime!
-    updated_at: DateTime!
+    createdAt: DateTime!
+    updatedAt: DateTime!
 }

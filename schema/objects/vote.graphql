@@ -1,0 +1,11 @@
+type Vote {
+    id: ID!
+    voteType: VoteType!
+    createdAt: DateTime!
+    updatedAt: DateTime!
+}
+
+enum VoteType {
+    GOOD
+    BAD
+}

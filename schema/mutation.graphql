@@ -10,4 +10,7 @@ type Mutation {
 
     # Tag
     createTag(input: CreateTagInput!): CreateTagPayload
+
+    # Vote
+    createVote(input: CreateVoteInput!): CreateVotePayload
 }
