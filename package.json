@@ -1,0 +1,15 @@
+{
+  "name": "tick_note_spec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uchidataku",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^15.5.0",
+    "graphql-modules": "^1.4.2"
+  }
+}
