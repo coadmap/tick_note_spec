@@ -3,6 +3,10 @@ type Mutation {
     updateAccount(input: UpdateAccountInput!): UpdateAccountPayload
     deleteAccount(input: DeleteAccountInput!): DeleteAccountPayload
 
+    # Following
+    createFollowing(input: CreateFollowingInput!): CreateFollowingPayload
+    deleteFollowing(input: DeleteFollowingInput!): DeleteFollowingPayload
+
     # Note
     createNote(input: CreateNoteInput!): CreateNotePayload
     updateNote(input: UpdateNoteInput!): UpdateNotePayload

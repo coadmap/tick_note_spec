@@ -1,0 +1,16 @@
+input CreateFollowingInput {
+    followerId: ID!
+    followedId: ID!
+}
+
+type CreateFollowingPayload {
+    following: Following
+}
+
+input DeleteFollowingInput {
+    followingId: ID!
+}
+
+type DeleteFollowingPayload {
+    following: Following
+}
