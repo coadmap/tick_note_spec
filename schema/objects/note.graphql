@@ -2,9 +2,11 @@ type Note {
     id: ID!
     title: String!
     content: String
+
     author: Account!
-    tags: [Tag]
-    votes: [Vote]
+    tags: [Tag!]!
+    votes: [Vote!]!
+
     createdAt: DateTime!
     updatedAt: DateTime!
 }

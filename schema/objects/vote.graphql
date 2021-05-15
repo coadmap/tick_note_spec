@@ -1,13 +1,11 @@
 type Vote {
     id: ID!
-    voteType: VoteType!
+    "そのNoteに対して良くないと思ったらマイナスの値,いいと思ったらプラスの値"
+    value: Int!
+
     account: Account!
     note: Note!
+
     createdAt: DateTime!
     updatedAt: DateTime!
-}
-
-enum VoteType {
-    GOOD
-    BAD
 }

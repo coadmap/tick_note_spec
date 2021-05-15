@@ -1,11 +1,15 @@
 type Query {
     # Account
     currentAccount: Account
-    accounts: [Account]
+    accounts: [Account!]
 
     # Note
-    notes: [Note]
+    notes(
+        offset: Int
+        limit: Int
+        keyword: String
+    ): [Note!]
 
     # Tag
-    tags: [Tag]
+    tags(keyword: String): [Tag!]
 }

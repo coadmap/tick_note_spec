@@ -1,7 +1,0 @@
-type Following {
-    id: ID!
-    follower: Account!
-    followed: Account!
-    createdAt: DateTime!
-    updatedAt: DateTime!
-}

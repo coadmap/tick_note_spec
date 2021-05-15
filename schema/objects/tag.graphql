@@ -1,7 +1,13 @@
 type Tag {
     id: ID!
     name: String!
-    notes: [Note]
+
+    notes(
+        offset: Int
+        limit: Int
+        keyword: String
+    ): [Note!]!
+
     createdAt: DateTime!
     updatedAt: DateTime!
 }
