@@ -1,6 +1,8 @@
 type Vote {
     id: ID!
     voteType: VoteType!
+    account: Account!
+    note: Note!
     createdAt: DateTime!
     updatedAt: DateTime!
 }

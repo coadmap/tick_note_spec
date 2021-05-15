@@ -4,6 +4,7 @@ type Note {
     content: String
     author: Account!
     tags: [Tag]
+    votes: [Vote]
     createdAt: DateTime!
     updatedAt: DateTime!
 }
