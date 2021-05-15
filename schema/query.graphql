@@ -3,15 +3,9 @@ type Query {
     currentAccount: Account
     accounts: [Account]
 
-    # Following
-    followings(accountId: ID!): [Following]
-
     # Note
     notes: [Note]
 
     # Tag
     tags: [Tag]
-
-    # Vote
-    votes(accountId: ID!): [Vote]
 }
