@@ -3,6 +3,16 @@ type Account {
     email: Email!
     password: String!
     username: String!
+    emailVerificationStatus: EmailVerificationStatus!
+    followings: [Following]
+    notes: [Note]
+    votes: [Vote]
     createdAt: DateTime!
     updatedAt: DateTime!
+}
+
+enum EmailVerificationStatus {
+    UNSPECIFIED
+    REQUESTED
+    VERIFIED
 }
