@@ -1,16 +1,17 @@
-input CreateFollowingInput {
-    followerId: ID!
-    followedId: ID!
+input FollowInput {
+    accountId: ID!
 }
 
-type CreateFollowingPayload {
-    following: Following
+type FollowPayload {
+    "フォローした相手の情報"
+    account: Account
 }
 
-input DeleteFollowingInput {
-    followingId: ID!
+input UnfollowInput {
+    accountId: ID!
 }
 
-type DeleteFollowingPayload {
-    following: Following
+type UnfollowPayload {
+    "フォローしていた相手の情報"
+    account: Account
 }

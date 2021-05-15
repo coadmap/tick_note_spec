@@ -1,12 +1,18 @@
 type Account {
     id: ID!
     email: Email!
-    password: String!
     username: String!
     emailVerificationStatus: EmailVerificationStatus!
-    followings: [Following]
-    notes: [Note]
-    votes: [Vote]
+
+    followings: [Account!]!
+    followers: [Account!]!
+    notes(
+        offset: Int
+        limit: Int
+        keyword: String
+    ): [Note!]!
+    votes: [Vote!]!
+
     createdAt: DateTime!
     updatedAt: DateTime!
 }
