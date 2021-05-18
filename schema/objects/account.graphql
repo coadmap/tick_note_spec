@@ -2,6 +2,7 @@ type Account {
     id: ID!
     email: Email!
     username: String!
+    avatarUrl: String
     status: AccountStatus!
     emailVerificationStatus: EmailVerificationStatus!
     deadlineAt: DateTime!

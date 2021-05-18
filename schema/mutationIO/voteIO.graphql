@@ -1,7 +1,7 @@
 input CreateVoteInput {
     accountId: ID!
     noteId: ID!
-    voteType: VoteType!
+    value: Int!
 }
 
 type CreateVotePayload {

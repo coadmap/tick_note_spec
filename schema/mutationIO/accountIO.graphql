@@ -23,6 +23,7 @@ input UpdateAccountInput {
     accountId: ID!
     email: String
     username: String
+    avatarUrl: String
 }
 
 type UpdateAccountPayload {
