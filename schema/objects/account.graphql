@@ -2,7 +2,10 @@ type Account {
     id: ID!
     email: Email!
     username: String!
+    status: AccountStatus!
     emailVerificationStatus: EmailVerificationStatus!
+    deadlineAt: DateTime!
+    isForever: Boolean!
 
     followings: [Account!]!
     followers: [Account!]!
@@ -15,6 +18,13 @@ type Account {
 
     createdAt: DateTime!
     updatedAt: DateTime!
+}
+
+enum AccountStatus {
+    "公開"
+    PUBLIC
+    "時間切れ削除"
+    DELETION
 }
 
 enum EmailVerificationStatus {
