@@ -1,5 +1,7 @@
 type Mutation {
     # Account
+    signUpAccount(input: SignUpAccountInput!): SignUpAccountPayload
+    signInAccount(input: SignInAccountInput!): SignInAccountPayload
     updateAccount(input: UpdateAccountInput!): UpdateAccountPayload
     deleteAccount(input: DeleteAccountInput!): DeleteAccountPayload
 
