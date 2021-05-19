@@ -1,7 +1,29 @@
+input SignUpAccountInput {
+    email: String!
+    password: String!
+    passwordConfirmation: String!
+    username: String!
+    avatarUrl: String
+}
+
+type SignUpAccountPayload {
+    account: Account
+}
+
+input SignInAccountInput {
+    email: String!
+    password: String!
+}
+
+type SignInAccountPayload {
+    account: Account
+}
+
 input UpdateAccountInput {
     accountId: ID!
     email: String
     username: String
+    avatarUrl: String
 }
 
 type UpdateAccountPayload {

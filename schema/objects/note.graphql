@@ -2,6 +2,9 @@ type Note {
     id: ID!
     title: String!
     content: String
+    expiredAt: DateTime!
+    isPublic: Boolean!
+    isForever: Boolean!
 
     author: Account!
     tags: [Tag!]!
