@@ -2,8 +2,8 @@ type Note {
     id: ID!
     title: String!
     content: String
-    status: NoteStatus!
-    deadlineAt: DateTime!
+    expiredAt: DateTime!
+    isPublic: Boolean!
     isForever: Boolean!
 
     author: Account!
@@ -12,13 +12,4 @@ type Note {
 
     createdAt: DateTime!
     updatedAt: DateTime!
-}
-
-enum  NoteStatus {
-    "下書き"
-    DRAFT
-    "公開"
-    PUBLIC
-    "時間切れ削除"
-    DELETION
 }

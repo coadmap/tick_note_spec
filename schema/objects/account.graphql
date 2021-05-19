@@ -3,9 +3,8 @@ type Account {
     email: Email!
     username: String!
     avatarUrl: String
-    status: AccountStatus!
     emailVerificationStatus: EmailVerificationStatus!
-    deadlineAt: DateTime!
+    expiredAt: DateTime!
     isForever: Boolean!
 
     followings: [Account!]!
@@ -19,13 +18,6 @@ type Account {
 
     createdAt: DateTime!
     updatedAt: DateTime!
-}
-
-enum AccountStatus {
-    "公開"
-    PUBLIC
-    "時間切れ削除"
-    DELETION
 }
 
 enum EmailVerificationStatus {
