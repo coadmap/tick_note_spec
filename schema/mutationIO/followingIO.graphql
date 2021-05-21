@@ -3,7 +3,7 @@ input FollowInput {
 }
 
 type FollowPayload {
-    "フォローした相手の情報"
+    #フォローした相手の情報"
     account: Account
 }
 
@@ -12,6 +12,7 @@ input UnfollowInput {
 }
 
 type UnfollowPayload {
-    "フォローしていた相手の情報"
+    #フォローしていた相手の情報
     account: Account
 }
+

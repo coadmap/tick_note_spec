@@ -1,6 +1,6 @@
 type Vote {
     id: ID!
-    "そのNoteに対して良くないと思ったらマイナスの値,いいと思ったらプラスの値"
+    #そのNoteに対して良くないと思ったらマイナスの値,いいと思ったらプラスの値
     value: Int!
 
     account: Account!
