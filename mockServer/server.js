@@ -21,6 +21,9 @@ const mocks = {
   Date: () => {
     return dayjs().format("YYYY-MM-DD");
   },
+  Email: () => {
+    return "test@test.com"
+  }
 };
 
 const server = new ApolloServer({ schema, mocks });

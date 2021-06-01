@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node bundle_schema.js && graphdoc -s schema.graphql -o functions/docs -f",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mockServer/server.js"
   },
   "author": "uchidataku",
   "license": "ISC",
