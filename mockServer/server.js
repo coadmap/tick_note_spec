@@ -31,5 +31,5 @@ const server = new ApolloServer({ schema, mocks });
 server.applyMiddleware({ app });
 
 app.listen({ port: 4000, path: "/graphql" }, () => {
-  console.log("Server is ready");
+  console.log("Server is ready http://localhost:4000/graphql");
 });
